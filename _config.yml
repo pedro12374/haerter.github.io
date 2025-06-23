@@ -13,7 +13,7 @@ title                    : "Pedro Haerter"
 title_separator          : "-"
 name                     : &name "Pedro Haerter"
 description              : &description "A personal website for Pedro Haerter, a researcher in the field of Dynamical Systems and Plasma Physics. This site showcases my work, publications, and interests in physics and science."
-url                      : https://haerter.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://pedro12374.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "pedro12374/haerter.github.io"
 
