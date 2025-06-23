@@ -1,16 +1,35 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% assign year_group = nil %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+{% for talk in site.talks reversed %}
+  {% assign current_year = talk.date | date: "%Y" %}
+  {% if current_year != year_group %}
+    {% assign year_group = current_year %}
+    <h2 class="archive__item-title no_toc" id="{{ year_group }}">{{ year_group }}</h2>
+  {% endif %}
 
-{% endif %}
+  <div class="archive__item">
+    <article class="archive__item" itemscope="" itemtype="http://schema.org/Event">
+      <h3 class="archive__item-title" itemprop="name">{{ talk.venue }}</h3>
+      <p class="page__meta">
+        <i class="fa fa-map-marker" aria-hidden="true"></i> {{ talk.location }} &bull; <time datetime="{{ talk.date | default: "1900-01-01" | date_to_xmlschema }}">{{ talk.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
+      </p>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+      {% if talk.title and talk.title != "" %}
+        <p class="archive__item-details">
+          Presented work: {{ talk.title }}<br>
+          {% if talk.authors and talk.authors != "" %}
+            Authors: {{ talk.authors }}<br>
+          {% endif %}
+          Type: {{ talk.type | default: "Oral Presentation" }}
+        </p>
+      {% endif %}
+    </article>
+  </div>
 {% endfor %}
