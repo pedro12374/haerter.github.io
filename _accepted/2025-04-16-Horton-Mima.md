@@ -1,6 +1,6 @@
 ---
-title: "Chaotic transport in the drift motion for a large-aspect ratio Tokamak with nonlinear mode coupling"
-collection: submitted # <--- IMPORTANT
+title: " Chaotic transport in the drift motion for a magnetized plasma with nonlinear mode coupling"
+collection: accepted # <--- IMPORTANT
 category: manuscripts
 date: 2025-04-16 # Submission date
 venue: 'Physics of Plasmas' # e.g., 'Physical Review Letters (Submitted)'
@@ -10,4 +10,4 @@ citation: 'Haerter, P., Caldas,I. L. and  Viana, R. L. Physics of Plasmas'
 
 
 # Status
-Submitted to Physics of Plasmas on 16/04/2025.
+Accepted to publish on Physics of Plasmas on 10/07/2025.
